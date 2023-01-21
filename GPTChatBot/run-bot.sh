@@ -1,4 +1,6 @@
-export SLACK_BOT_TOKEN=<slack_bot_token>
-export SLACK_APP_TOKEN=<slack_app_token>
-export OPENAI_TOKEN=<openai_token>
+export SLACK_BOT_TOKEN=<BOT_TOKEN>
+export SLACK_APP_TOKEN=<APP_TOKEN>
+export SLACK_SIGNING_SECRET=<SIGNING_SECRET>
+export OPENAI_TOKEN=<OPENAI_TOKEN>
+export MAX_CONTEXT_BUFFER_LEN=2000
 python app.py

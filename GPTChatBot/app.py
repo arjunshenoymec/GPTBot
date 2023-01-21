@@ -22,4 +22,5 @@ def event_test(say, message):
         buffer = buffer + response
 
 if __name__ == "__main__":
+    app = App(token=os.environ["SLACK_BOT_TOKEN"])
     SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
