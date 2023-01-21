@@ -1,2 +1,5 @@
 __pycache__
 utils.egg-info/
+build/
+dist/
+run-bot-template.sh
