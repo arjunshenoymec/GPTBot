@@ -5,21 +5,16 @@ __all__ = ("OpenAIClient")
 class OpenAIClient(object):
     """
     """
-    def __init__(self, token):
+    def __init__(self, token: str, param_mapping: dict):
         openai.api_key = token
+        self._params = param_mapping
 
     def get_responses(self, prompt):
         """
         """
         if prompt:
-            response = openai.Completion.create(
-                        model="text-davinci-003",
-                        prompt=prompt,
-                        temperature=0.3,
-                        max_tokens=3000,
-                        top_p=1,
-                        frequency_penalty=0,
-                        presence_penalty=0)
+            self._params["prompt"] = prompt
+            response = openai.Completion.create(**self._params)
             if response.choices:
                 return [choice.text for choice in response.choices]
             else:
