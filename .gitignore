@@ -2,4 +2,4 @@ __pycache__
 utils.egg-info/
 build/
 dist/
-run-bot-*.sh
+**/run-bot.sh
