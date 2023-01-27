@@ -20,4 +20,3 @@ This bot subscribes to the following events.
 
 
 This app communicates to the server via `SocketMode`. [SocketMode](https://api.slack.com/apis/connections/socket) is usually used for testing and enables us to skip various configuration steps when we want to focus on the functionality of the app. 
-
